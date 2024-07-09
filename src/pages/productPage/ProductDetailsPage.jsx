@@ -179,7 +179,7 @@ const ProductDetailsPage = () => {
         category: "phones"
       },
    
-    // Add more products as needed
+   
   ];
 
   useEffect(() => {

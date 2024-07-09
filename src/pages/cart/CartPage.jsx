@@ -171,11 +171,83 @@ const OrderSummary = () => {
   );
 };
 
+const PaymentCard= () => {
+  return(
+    <div className="bg-white p-4 rounded-md shadow-lg font-bold font-mon left text-base mt-4">
+      <h3 className="font-semibold text-2xl mb-2 text-left">Payment Card</h3>
+      <p>Payment Method:</p>
+      <label className="flex items-center space-x-2">
+  <input type="radio" className="w-2 h-2" />
+  
+  <img src="c.png" className="w-4 h-4" alt="Paypal logo" />
+  <span>Paypal</span>
+</label>
+<label className="flex items-center space-x-2">
+  <input type="radio" className="w-2 h-2" />
+  
+  <span>Credit Card</span>
+  <img src="a.png" className="w-4 h-4" alt="Paypal logo" />
+  <img src="b.png" className="w-4 h-4" alt="Paypal logo" />
+  <img src="d.png" className="w-4 h-4" alt="Paypal logo" />
+</label>
+<div className="mt-4">
+<label className="block text-sm font-medium">Name on Card</label>
+          <input
+            type="text"
+            placeholder="Select State"
+            className="w-full border  rounded-md p-2"
+          />
+
+      <label className="block text-sm font-medium"> Card Number</label>
+          <input
+            type="text"
+            placeholder="Enter number on Card"
+            className="w-full border border-gray-300 rounded-md  mt-2 p-2"
+          />
+        
+        </div>
+        <div className="flex gap-1 mt-2">
+        <div className="flex-1">
+          <label className="block text-sm font-medium">
+           Expiry Date 
+          </label>
+          <input
+            type="text"
+            placeholder="Expiry Date"
+            className=" border border-gray-300 rounded-md p-2"
+          />
+        </div>
+        <div className="flex-1">
+          <label className="block text-sm font-medium">
+            CVV
+          </label>
+          <input
+            type="text"
+            placeholder="CVV"
+            className="w- border rounded-md p-2"
+          />
+        </div>
+        </div>
+        <div className="flex items-left   mt-2">
+      <label className="flex items-center cursor-pointer text-lg">
+        <input type="radio" name="address" value="address" className="hidden" />
+        <span className="w-2 h-2 border-2 border-black bg-white mr-3 rounded-none relative">
+          
+        </span>
+        Save my details for future purchases
+      </label>
+    </div>
+       
+</div>
+ 
+  )
+}
+
 
 
 const CartPage = () => {
   return (
-    <div className="w-full font-montserrat bg-white text-black">
+    <div className="w-full font-mont bg-white text-black">
       <Nav/>
       <div className="py-[5%] mt-16 w-full flex flex-col justify-between gap-4 lg:px-[5%]">
         <ProgressIndicator />
@@ -183,10 +255,11 @@ const CartPage = () => {
           <div className="flex flex-col lg:w-[45%]">
             <h2 className="text-2xl font-semibold mb-4">Shipping Address</h2>
             <ShippingAddressForm />
+            <PaymentCard/>
           </div>
           <div className="lg:w-1/3 mt-8 py-6 space-y-10">
             <OrderSummary />
-           
+          
           </div>
         </div>
       </div>

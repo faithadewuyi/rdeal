@@ -48,7 +48,7 @@ const Products = ({ category }) => {
       imageSrc:"../5.png",
       productName:"Samsung Galaxy A51",
       productDesc:"Dual Sim(4GB +128GB )",
-      productPric:"₦90,000",
+      productPrice:"₦90,000",
       review:"⭐⭐⭐⭐⭐",
       reviewCount:"(21 reviews)",
       category: "phones",
@@ -154,16 +154,16 @@ const Products = ({ category }) => {
         reviewCount:"(21 reviews)",
         category:"phones",
     },
-    {
-        id: 16,
-        imageSrc:"../14.png",
-        productName:"Samsung Galaxy Note A 14",
-        productDesc:"5G(8GB +256GB ROM)",
-        productPrice:"₦150,000",
-        review:"⭐⭐⭐⭐⭐",
-        reviewCount:"(21 reviews)",
-        category: "phones"
-      },
+    // {
+    //     id: 16,
+    //     imageSrc:"../14.png",
+    //     productName:"Samsung Galaxy Note A 14",
+    //     productDesc:"5G(8GB +256GB ROM)",
+    //     productPrice:"₦150,000",
+    //     review:"⭐⭐⭐⭐⭐",
+    //     reviewCount:"(21 reviews)",
+    //     category: "phones"
+    //   },
    
     ];
   
@@ -178,7 +178,7 @@ const Products = ({ category }) => {
     const filteredProducts = filterProducts(products, category);
   
     return (
-      <div className="grid grid-cols-1 gap-x-3 gap-y-5 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+      <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 xl:gap-x-10">
         {filteredProducts.map(product => (
           <Link key={product.id} to={`/products/${product.id}`} className="focus:outline-none">
             <ProductCards
