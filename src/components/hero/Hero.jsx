@@ -47,7 +47,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: isLargeScreen ? 400 : 10 }}
             transition={{ duration: 1 }}
           >
-            <img src="hero.png" alt="hero image" className="w-52 h-52 object-cover  md:mb-0" />
+            <img src="hero.png" alt="hero image" className="w-80 h-52 object-cover  md:mb-0" />
           </motion.div>
         </div>
       </div>
