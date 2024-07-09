@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Products from './Products';
 import Hero from '../../components/hero/Hero';
+import Footer from '../../components/footer/Footer';
 
 function ProductPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -64,7 +65,7 @@ function ProductPage() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+       <Footer /> 
     </div>
   );
 }
