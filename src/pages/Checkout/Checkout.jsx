@@ -1,4 +1,5 @@
 
+import Footer from '../../components/footer/Footer';
 import Nav from '../../components/navbar/Nav';
 
 const OrderSummary = () => {
@@ -34,6 +35,7 @@ const Checkout = () => {
       <h2 className="text-2xl font-bold mb-6 text-center">Thank you for placing your order</h2>
       <OrderSummary />
     </div>
+    <Footer/>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import  { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Nav from '../../components/navbar/Nav';
+import Footer from '../../components/footer/Footer';
 const ProductDetailsPage = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
@@ -211,6 +212,7 @@ const ProductDetailsPage = () => {
       
       
     </div>
+    <Footer/>
     </div>
   );
 };

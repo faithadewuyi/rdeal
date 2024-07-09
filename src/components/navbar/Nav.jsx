@@ -101,10 +101,10 @@ const Nav = () => {
           <Link to="/cart" className="hover:text-btn text-black">
             <span className="material-symbols-outlined">shopping_cart</span>
           </Link>
-          <a href="/wishlist" className="hover:text-btn text-black">
+          <a href="/" className="hover:text-btn text-black">
             <span className="material-symbols-outlined">favorite</span>
           </a>
-          <a href="/profile" className="hover:text-btn text-black">
+          <a href="/" className="hover:text-btn text-black">
             <span className="material-symbols-outlined">person</span>
           </a>
           <a

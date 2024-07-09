@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "../../components/navbar/Nav";
+import Footer from "../../components/footer/Footer";
 
 const ProgressIndicator = () => {
   return (
@@ -189,6 +190,7 @@ const CartPage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
