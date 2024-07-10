@@ -196,7 +196,7 @@ const ProductDetailsPage = () => {
       <Nav/>
     <div className="container mt-10 mx-auto px-6 py-8">
       <div className="flex">
-      <div className="shadow-2xl">
+      <div className="shadow-2xl h-4">
         <img src={product.imageSrc} alt={product.productName} />
       </div>
       <div className="w-1/2 pl-6">

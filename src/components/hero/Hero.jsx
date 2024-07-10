@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Nav from '../navbar/Nav';
+import { Link } from 'react-router-dom';
 
 
 const Hero = () => {
@@ -27,7 +28,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2  lg:gap-24 place-items-center justify-between">
           {/* Text Content */}
           <div className="space-y-3 mt-1 text-left md:mt-0 order-2 md:order-1 lg:transform lg:-translate-x-72">
-            <h2 className="text-4xl md:text-6xl font-bold text-white text-mon lg:text-7xl">
+            <h2 className="text-4xl md:text-6xl font-bold text-white text-mon lg:text-6xl">
               Discover the latest in
             </h2>
             <h2 className="text-4xl md:text-5xl font-bold text-white text-mon">
@@ -36,9 +37,9 @@ const Hero = () => {
             <p className="-2 mb-4 text-base text-white md:text-lg text-mon">
               Get up to 70% Discount
             </p>
-            <button className="block md:inline-block bg-btn rounded-md px-6 py-1 text-white font-medium hover:font-bold hover:bg-btnHover w-full md:w-auto">
+            <Link to="/" className="block md:inline-block bg-btn rounded-md px-6 py-1 text-white font-medium hover:font-bold hover:bg-btnHover w-full md:w-auto">
               Explore
-            </button>
+            </Link>
           </div>
           {/* Images */}
           <motion.div 
